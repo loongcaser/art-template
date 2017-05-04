@@ -1,5 +1,5 @@
 ## requirejs-demo
-requirejs + grunt
+A project build with requirejs + grunt
 
 ## Build Setup
 

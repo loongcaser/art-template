@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## hala
 >  本项目是基于vue的移动端项目
 
@@ -14,6 +15,8 @@
 ## Build Setup
 
 ``` bash
+=======
+>>>>>>> 69e972feae2ff77bfafcec0d58d3be148e852669
 本地调试启动：
 
 # install dependencies

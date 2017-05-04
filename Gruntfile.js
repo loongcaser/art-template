@@ -124,7 +124,7 @@ module.exports = function(grunt) {
                 }]
             }
         },
-        //清除目录
+        //清除log文件
         clean: {
             txt: 'muti-page-built/build.txt'
         },

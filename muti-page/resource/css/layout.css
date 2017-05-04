@@ -37,6 +37,7 @@
     height: 468px;
 }
 .product-banner{
+    position: relative;
     height: 440px;
 }
 .product-detail .wrap-sub h2{

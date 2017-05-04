@@ -1,25 +1,5 @@
 @import "base.css";
-/** top-banner start **/
-.content .top-banner{
-    background-image: url("../images/index/index_top_bg.jpg");
-    background-position: center 0;
-    background-repeat: repeat-x;
-    height: 700px;
-    overflow: auto;
-}
-.content .top-banner .wrap > p{
-    width: 1000px;
-    margin: 323px auto 0;
-    font-size: 28px;
-    text-align: center;
-    color: #fff;
-}
-.content .top-banner .wrap > a{
-    margin: 75px auto 0;
-}
-/** top-banner end **/
-
-
+@import "common.css";
 /** product-banner start **/
 .product-banner{
     clear: none;
@@ -104,7 +84,6 @@
 .help-banner ul li:hover > img.off{
     display: block;
 }
-
 /** help-banner end **/
 
 
@@ -265,21 +244,3 @@
     color: #969696;
 }
 /** company-banner end **/
-
-
-/** desire-banner end **/
-.desire-banner{
-    height: 120px;
-    line-height: 120px;
-    color: #ffffff;
-    clear: both;
-    background-color: #2679cd;
-}
-.desire-banner .wrap-sub > span{
-    font-size: 20px;
-}
-.desire-banner .wrap-sub > a{
-    margin-top: 40px;
-}
-
-/** desire-banner end **/

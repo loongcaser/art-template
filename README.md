@@ -1,9 +1,9 @@
-### start server
+### start
 ```
 npm run dev
 ```
 
-### uglify js\html\css
+### build
 ```
 npm run build
 ```

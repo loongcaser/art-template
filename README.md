@@ -1,10 +1,11 @@
-Build Setup
+本地调试启动：
 
 # install dependencies
-npm install
+第一步：npm install
 
-# serve with hot reload at localhost:3030
-npm run dev
+# serve with hot reload at localhost:8088
+第二步：npm run dev
 
+打包：
 # build for production with minification
 npm run build

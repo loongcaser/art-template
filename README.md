@@ -1,11 +1,10 @@
-### 启动服务
-`命令`
-```
-npm run dev
-```
+Build Setup
 
-### 压缩js\html\css
-`命令`
-```
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:2222
+npm run dev
+
+# build for production with minification
 npm run build
-```

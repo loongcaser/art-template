@@ -2,7 +2,5 @@
 .gitignore
 node_modules/
 muti-page-built/
-Gruntfile.js
-package.json
 .idea/
-README.md
+requirejs-demo.iml

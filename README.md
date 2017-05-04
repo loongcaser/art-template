@@ -1,5 +1,5 @@
-## hala
->  本项目是基于vue的移动端项目
+## requirejs-demo
+ requirejs + grunt
 
 ## Build Setup
 

@@ -1,0 +1,44 @@
+{
+    "list":{
+        "1":[
+            {
+                "title":"行业新闻标题1",
+                "date":"2017-02-11",
+                "url":"",
+                "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismodbibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodalespulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nasceturridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci,sed rhoncus sapien nunc eget."
+            },
+            {
+                "title":"行业新闻标题2",
+                "date":"2017-02-15",
+                "url":"",
+                "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismodbibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodalespulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nasceturridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci,sed rhoncus sapien nunc eget."
+            },
+            {
+                "title":"行业新闻标题3",
+                "date":"2017-03-20",
+                "url":"",
+                "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismodbibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodalespulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nasceturridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci,sed rhoncus sapien nunc eget."
+            }
+        ],
+        "2":[
+            {
+                "title":"行业新闻标题4",
+                "date":"2017-04-22",
+                "url":"",
+                "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismodbibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodalespulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nasceturridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci,sed rhoncus sapien nunc eget."
+            },
+            {
+                "title":"行业新闻标题5",
+                "date":"2017-04-23",
+                "url":"",
+                "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismodbibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodalespulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nasceturridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci,sed rhoncus sapien nunc eget."
+            },
+            {
+                "title":"行业新闻标题6",
+                "date":"2017-04-26",
+                "url":"",
+                "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismodbibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodalespulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nasceturridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci,sed rhoncus sapien nunc eget."
+            }
+        ]
+    }
+}

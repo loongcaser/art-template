@@ -1,0 +1,285 @@
+@import "base.css";
+/** top-banner start **/
+.content .top-banner{
+    background-image: url("../images/index/index_top_bg.jpg");
+    background-position: center 0;
+    background-repeat: repeat-x;
+    height: 700px;
+    overflow: auto;
+}
+.content .top-banner .wrap > p{
+    width: 1000px;
+    margin: 323px auto 0;
+    font-size: 28px;
+    text-align: center;
+    color: #fff;
+}
+.content .top-banner .wrap > a{
+    margin: 75px auto 0;
+}
+/** top-banner end **/
+
+
+/** product-banner start **/
+.product-banner{
+    clear: none;
+    position: relative;
+}
+.product-banner .introduction > img{
+    position: absolute;
+    left: 50%;
+    top: 85px;
+    margin-left: -651px;
+}
+.introduction{
+    width: 575px;
+    padding-top: 110px;
+    padding-bottom: 115px;
+}
+.product-banner .introduction h2{
+    font-size: 32px;
+    line-height: 32px;
+}
+.product-banner .introduction h2 i{
+    color:#2679cd;
+}
+.introduction .introduction-text{
+    margin: 60px 0;
+}
+.introduction .introduction-text > p{
+    line-height: 22px;
+}
+.introduction .introduction-text > p:first-child{
+    color: #363636;
+    font-size: 20px;
+}
+.introduction .introduction-text > p:last-child{
+    color: #666666;
+    margin-top: 40px;
+}
+/** top-product-banner end **/
+
+
+/** help-banner start **/
+.help-banner{
+    height: 800px;
+    overflow: auto;
+    clear: both;
+    background-image: url("../images/index/help_bg.jpg");
+    background-position: center 0;
+}
+.help-banner .wrap h2{
+    font-size: 40px;
+    margin: 110px auto 105px;
+    color: #ffffff;
+    text-align: center;
+}
+.help-banner ul{
+}
+.help-banner ul li{
+    float: left;
+    width: 382px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 16px;
+}
+.help-banner ul li > span{
+    margin-top: 35px;
+    display: block;
+}
+.help-banner ul li:last-child{
+    margin-right: 0;
+}
+.help-banner ul li > img.off{
+    display: none;
+}
+.help-banner ul li:hover{
+    font-size: 24px;
+}
+.help-banner ul li:hover > img.on{
+    display: none;
+}
+.help-banner ul li:hover > img.off{
+    display: block;
+}
+
+/** help-banner end **/
+
+
+/** feature-banner end **/
+.feature-banner{
+    padding: 108px 0 136px 0;
+    overflow: auto;
+}
+.feature-banner h2{
+    font-size: 32px;
+    text-align: center;
+    line-height: 32px;
+    margin-bottom: 108px;
+}
+.feature-banner ul{
+
+}
+.feature-banner ul li{
+    float: left;
+    margin-left: 68px;
+    text-align: center;
+    width: 128px;
+    margin-right: 110px;
+}
+.feature-banner ul li img{
+    margin-bottom: 22px;
+}
+.feature-banner ul li img,.feature-banner ul li span{
+    display: block;
+}
+.feature-banner ul li:last-child{
+    margin-right: 0;
+}
+
+/** strategy-banner end **/
+
+
+/** strategy-banner start **/
+.strategy-banner{
+    padding: 200px 0;
+    color: #ffffff;
+    background-image: url("../images/index/strategy_bg.jpg");
+    background-position: center 0;
+    background-repeat: no-repeat;
+}
+.strategy-banner .wrap > h2{
+    text-align: center;
+    font-size: 40px;
+}
+.strategy-banner .wrap > p{
+    width: 600px;
+    text-align: center;
+    margin: 42px auto;
+}
+.strategy-banner .wrap > .btn-primary{
+    margin: 0 auto;
+}
+/** feature-banner end **/
+
+
+/** company-banner start **/
+.company-banner{
+}
+.company-banner h2{
+    text-align: center;
+    font-size: 32px;
+    line-height: 32px;
+    margin: 22px auto 0;
+}
+.company-banner ul{
+    margin: 45px auto 60px;
+    overflow: auto;
+}
+.company-banner ul li{
+    float: left;
+    margin-left: 45px;
+    margin-right: 32px;
+    text-align: center;
+}
+.company-banner ul li:hover > span{
+    visibility: visible;
+}
+.company-banner ul li > span{
+    display: block;
+    visibility: hidden;
+    border-radius: 8px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+}
+.company-banner ul li:last-child{
+    margin-right: 0;
+}
+/** company-banner end **/
+
+
+/** company-banner start **/
+.index-news-banner{
+    background-color: #f2f6f7;
+    padding: 125px 0;
+}
+.index-news-banner h2{
+    text-align: center;
+    font-size: 35px;
+    line-height: 32px;
+    text-align: center;
+}
+.index-news-banner h2 small{
+    display: block;
+    font-size:18px;
+    margin: 35px auto 65px;
+}
+.index-news-banner ul{
+    margin: 45px auto 0px;
+    overflow: auto;
+}
+.index-news-banner ul li{
+    float: left;
+    margin-right: 20px;
+}
+.index-news-banner ul li:last-child{
+    margin-right: 0;
+}
+.index-news-banner ul li:hover h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+.index-news-banner ul li:hover .new_icon_off{
+    display: block;
+}
+.index-news-banner ul li:hover .new_icon_on{
+    display: none;
+}
+.index-news-banner ul .new_icon_off{
+    display: none;
+}
+.help-banner ul li > img.off{
+    display: none;
+}
+.help-banner ul li:hover{
+    font-size: 24px;
+}
+.help-banner ul li:hover > img.on{
+    display: none;
+}
+.help-banner ul li:hover > img.off{
+    display: block;
+}
+.desc h3{
+    font-size: 18px;
+    color: #131820;
+    height: 30px;
+    padding: 15px 0 10px;
+}
+.desc p{
+    color: #969696;
+}
+/** company-banner end **/
+
+
+/** desire-banner end **/
+.desire-banner{
+    height: 120px;
+    line-height: 120px;
+    color: #ffffff;
+    clear: both;
+    background-color: #2679cd;
+}
+.desire-banner .wrap-sub > span{
+    font-size: 20px;
+}
+.desire-banner .wrap-sub > a{
+    margin-top: 40px;
+}
+
+/** desire-banner end **/

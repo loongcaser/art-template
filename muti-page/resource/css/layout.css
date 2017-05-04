@@ -1,0 +1,595 @@
+/** 产品页 start **/
+.product-desc .wrap > h2 {
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    margin: 70px auto;
+}
+.product-desc .introduction > img {
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    margin-left: -651px;
+}
+.product-desc .introduction {
+    width: 441px;
+    padding-top: 0;
+    padding-bottom: 300px;
+}
+.product-desc .introduction .introduction-text{
+    margin: 20px 0 30px;
+}
+.product-desc .introduction .introduction-text > p:first-child {
+    font-size: 26px;
+    line-height: 36px;
+}
+.product-desc .introduction .introduction-text > p:last-child {
+    color: #666;
+    margin-top: 30px;
+    font-size: 21px;
+    line-height: 28px;
+}
+
+/** 产品详情页 start **/
+.product-top-banner {
+    background-image: url(../images/product/product_top_bg.png);
+    background-repeat: repeat-x;
+    height: 468px;
+}
+.product-banner{
+    height: 440px;
+}
+.product-detail .wrap-sub h2{
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    margin: 20px auto;
+}
+.product-detail .wrap-sub h2 i{
+    color:#2679cd;
+}
+.product-detail .wrap-sub > img {
+    display: block;
+    margin: -280px auto 0;
+    position: absolute;
+}
+.product-detail .introduction {
+    padding-top: 300px;
+    width: auto;
+    text-align: center;
+    padding-bottom: 0px;
+}
+.product-detail .introduction .introduction-text{
+    margin: 0;
+}
+.product-detail .introduction .introduction-text p {
+    margin: 20px 0 30px;
+    font-size: 24px;
+    color: #666;
+    line-height: 36px;
+}
+
+
+.modules-banner{
+    padding: 30px 0 60px 0;
+    overflow: auto;
+}
+.modules-banner h2{
+    font-size: 32px;
+    text-align: center;
+    line-height: 32px;
+    margin-bottom: 40px;
+}
+.modules-banner ul{
+
+}
+.modules-banner ul li{
+    float: left;
+    text-align: center;
+}
+.modules-banner ul li img{
+    margin-bottom: 22px;
+}
+.modules-banner ul li img,.modules-banner ul li span{
+    display: block;
+}
+.modules-banner ul li:last-child{
+    margin-right: 0;
+}
+.modules-banner1{
+    background-color: #f5f5f5;
+}
+.modules-banner1 li{
+    width: 180px;
+    height: 260px;
+}
+
+.modules-banner1 li.mid{
+    margin: 0 220px;
+}
+
+.modules-banner2 ul li{
+    float: left;
+    text-align: center;
+    width: 128px;
+    margin-right: 156px;
+}
+
+.other-banner{
+    height: 230px;
+    background-color: #f2f6f7;
+    text-align: center;
+    line-height: 230px;
+    font-size: 40px;
+    clear: both;
+    font-weight: normal;
+    color: #666;
+}
+/** 产品页 end **/
+
+
+/** 关于我们 start **/
+.about-top-banner{
+    background-image: url("../images/about/top_bg.jpg");
+    background-position: center 0;
+    height: 308px;
+    padding: 160px 0 0;
+    color: #e4e4e4;
+}
+
+.about-top-banner .wrap-sub > h2{
+    font-size: 50px;
+    margin: 130px auto 20px;
+}
+.about-top-banner .wrap-sub > p{
+    font-size: 24px;
+}
+
+.introduce-banner{
+    padding: 60px 0;
+}
+.introduce-banner .wrap > p:first-child{
+    font-size:32px;
+    color: #363636;
+}
+.introduce-banner .wrap > p.sec{
+    color: #666;
+    font-size: 16px;
+    margin: 55px 0 70px;
+}
+.introduce-banner .wrap > .btn{
+    margin: 0 auto;
+}
+
+.business-banner{
+    padding: 128px 0 160px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #3e444a;
+}
+.business-banner h2{
+    font-size: 40px;
+}
+
+.pic-banner{
+    clear: both;
+    padding-top: 35px;
+}
+.pic-banner ul li{
+    float: left;
+    text-align: center;
+    color: #1e1e1e;
+    font-size: 18px;
+    width: 208px;
+    height: 175px;
+}
+.pic-banner ul li.mid{
+    margin: 0 175px;
+}
+.pic-banner ul li img, .pic-banner ul li span{
+    margin: 0 auto;
+    display: block;
+}
+.pic-banner ul li span{
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.advantage-banner{
+    padding: 108px 0 180px;
+    background-color: #f2f2f2;
+    clear: both;
+    overflow: auto;
+}
+.advantage-banner h2{
+    font-size: 32px;
+    margin-bottom: 60px;
+}
+.advantage-banner ul li{
+    width: 220px;
+    margin-right: 20px;
+    float: left;
+}
+.advantage-banner ul li > div:first-child{
+    font-size:60px;
+    font-style: italic;
+    color: #1364fe;
+}
+.advantage-banner ul li > div:nth-child(2){
+    font-size: 18px;
+    margin: 30px 0;
+    color: #797979;
+}
+.advantage-banner ul li > div:last-child{
+    width: 60px;
+    height: 2px;
+    background-color: #1364fe;
+}
+
+.tream-banner{
+    padding: 45px 0 65px;
+    overflow: auto;
+}
+.tream-banner h2{
+    font-size: 32px;
+    text-align: center;
+}
+.tream-banner h2 small{
+    font-size: 14px;
+    display: block;
+    color: #666;
+    margin-top: 40px;
+}
+.tream-banner ul{
+    margin-top: 55px;
+}
+.tream-banner ul li{
+    width: 255px;
+    float: left;
+    margin-right: 100px;
+}
+.tream-banner ul li:last-child{
+    margin-right: 0;
+}
+.tream-banner ul li img{
+    width: 154px;
+    height: 154px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+}
+.tream-banner ul li p{
+    font-size: 14px;
+    margin: 30px 0;
+    color: #666;
+}
+.tream-banner ul li div b, .tream2-banner ul li div b{
+    margin-right: 10px;
+}
+
+.tream2-banner{
+    padding: 125px 0 135px;
+    overflow: auto;
+    background-color: #f2f2f2;
+}
+.tream2-banner h2{
+    font-size: 32px;
+    text-align: center;
+}
+.tream2-banner h2 small{
+    font-size: 14px;
+    display: block;
+    color: #666;
+    margin-top: 40px;
+}
+.tream2-banner ul{
+    margin-top: 80px;
+}
+.tream2-banner ul li{
+    float: left;
+    width: 280px;
+    margin-right: 70px;
+}
+.tream2-banner ul li:last-child{
+    margin-right: 0;
+}
+.tream2-banner ul li img{
+    display: block;
+    background-color: #dcdcdc;
+    height: 300px;
+    width: 280px;
+
+}
+.tream2-banner ul li div{
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    background-color: #bfbfbf;
+    border-top: 1px solid #fff;
+}
+/** 关于我们 end **/
+
+/** 联系我们 start **/
+.contact-top-banner{
+    height: 467px;
+    background-image: url("../images/contact/contact_top_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+.contact-info-banner{
+    padding: 20px 0 40px;
+}
+.contact-info-item{
+    margin-top: 36px;
+    font-size: 16px;
+}
+.contact-info-item h2{
+    font-size: 32px;
+    color: #363636;
+}
+.contact-info-item p{
+    margin-top: 15px;
+    color: #666;
+}
+
+/** 百度地图 start **/
+.iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+.iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+/** 百度地图 end **/
+
+/** 联系我们 end **/
+
+
+
+/** 招聘详情 start **/
+.join-detail-banner{
+    background-color: #f2f6f7;
+    overflow: auto;
+}
+.join-detail-banner .wrap-sub h2{
+    margin: 25px 0;
+    font-size: 32px;
+}
+.detail-text ul{
+    overflow: auto;
+}
+.detail-text ul li{
+    color: #666;
+    margin-right: 118px;
+    float: left;
+}
+.detail-text ul li:last-child{
+    margin-right: 0;
+}
+.detail-text ul li b{
+    color: #333;
+}
+.detail-text dl{
+    clear: both;
+    margin-top: 15px;
+}
+.detail-text dl dt{
+    color: #333;
+    font-weight: bold;
+    font-size: 15px;
+}
+.detail-text dl dd{
+    color: #666;
+    font-size: 14px;
+}
+.detail-text > p{
+    margin-top: 25px;
+    font-size: 14px;
+    color: #5e5e5e;
+}
+.goback{
+    font-size: 14px;
+    margin: 15px 0 30px;
+}
+.goback a{
+    display: inline-block;
+    height: 27px;
+    line-height: 27px;
+    width: 80px;
+}
+/** 招聘详情 end **/
+
+
+/** 公司新闻 start **/
+.news-top-banner {
+    height: 468px;
+    background-image: url("../images/news/news_detail_bg.jpg");
+    background-position: center 0;
+    background-repeat: no-repeat;
+}
+.news-banner{
+    background-color: #faf9fe;
+    overflow: auto;
+    padding: 45px 0;
+}
+.news-menus{
+    width: 200px;
+    margin-right: 100px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #d7d7d7;
+}
+.news-content{
+    width: 875px;
+}
+.news-menus dl dt{
+    color: #fff;
+    background-color: #2c3344;
+}
+.news-menus dl dd{
+    line-height: 40px;
+    height: 40px;
+}
+.news-menus dl dd a{
+    color: #bcbcbc;
+    background-color: #fff;
+    display: block;
+}
+.news-menus dl dd.active a{
+    cursor: pointer;
+    color: #515151;
+    background-color: #f5f5f5;
+}
+.news-menus dl dd:hover a{
+    background-color: #bcbcbc;
+    color: #282828;
+}
+.news-header h2{
+    font-size: 32px;
+    color: #333;
+}
+.news-body .body-title{
+    color: #2679cd;
+    font-size: 20px;
+}
+.news-body .body-title a{
+    color: #2679cd;
+}
+.news-body .body-title a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.news-body .body-date{
+    font-size: 14px;
+    margin: 5px 0 15px;
+    color: #969696;
+    display: block;
+}
+.news-body ul li{
+    margin: 30px 0 20px;
+}
+.news-body ul li:last-child{
+    margin-bottom: 0;
+}
+.news-body ul li > img{
+    display: block;
+}
+.industry-body ul li > img{
+    background-color: #21a0ff;
+    width: 465px;
+    height: 302px;
+    color: #21a0ff;
+}
+.news-body ul li > p{
+    margin-top: 30px;
+    color: #545454;
+}
+.news-body ul li > hr{
+    border: 1px solid #dddbdb;
+    margin: 30px auto 0;
+}
+/** 公司新闻 end **/
+
+/** 新闻详情 start **/
+.news-detail-top-banner {
+    height: 468px;
+    background-image: url("../images/news/news_detail_bg.jpg");
+    background-position: center 0;
+    background-repeat: no-repeat;
+}
+.news-header h2 small{
+    display: block;
+    margin-top: 8px;
+    font-size:14px;
+    color: #969696;
+}
+.new-detail .news-body ul li > img{
+    width: 800px;
+    height: 480px;
+    margin: 0 auto;
+}
+.new-detail .news-body ul li > p{
+    margin-top: 15px;
+}
+.new-detail .news-body .pic-desc{
+    text-align: center;
+    color: #666;
+    margin-top: 10px;
+}
+.page-nav{
+    width: 600px;
+    margin: 80px auto 40px;
+}
+.page-nav a{
+    display: inline-block;
+    text-align: center;
+    width: 118px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 8px;
+    background-color: #2679cd;
+}
+.page-nav a:hover{
+    background-color: #0056bf;
+}
+.page-nav a:nth-child(2){
+    margin:0 120px;
+}
+/** 新闻详情 end **/
+
+
+
+/** 招聘 start **/
+.join-top-banner{
+    height: 468px;
+    background-image: url("../images/job/top_banner_bg.jpg");
+    background-position: center 0;
+    background-repeat: no-repeat;
+}
+.join-banner{
+    padding: 20px 0 50px;
+    background-color: #f2f6f7;
+}
+.join-body{
+    margin-top: 28px;
+}
+.join-list thead th{
+    background-color: #2c3344;
+    color: #fff;
+    border: 0px;
+    font-size: 15px;
+    text-align: left;
+    height: 38px;
+    line-height: 38px;
+}
+.join-list thead th:first-child, .join-list tbody td:first-child{
+    padding-left: 40px;
+}
+.join-list thead th:last-child, .join-list tbody td:last-child{
+    padding-left: 40px;
+}
+.join-list tbody td{
+    color: #666;
+    fong-size:15px;
+}
+.join-list tbody td:first-child a{
+    color: #2679cd;
+}
+.join-list tbody td:first-child a:hover{
+    text-decoration: underline;
+}
+.join-list tfoot td{
+    border:0;
+}
+.join-list tfoot ul{
+    margin: 15px 40px 15px 0;
+}
+table{ border-collapse:collapse;background-color: #fff; }
+td{
+    border: 0px;
+    padding:5px;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #dedede;
+}
+
+/** 招聘 end **/
+

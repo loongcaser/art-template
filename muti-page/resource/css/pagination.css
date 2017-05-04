@@ -1,0 +1,68 @@
+.page{
+    list-style: none;
+    float: right;
+    margin-top: 50px;
+}
+.page>li{
+    float: left;
+    cursor: pointer;
+    line-height: 28px;
+    height: 30px;
+    width: 28px;
+    text-align: center;
+}
+.page .pageItem{
+    border: solid thin #dedede;
+    margin: 2px;
+}
+.page .pageItemActive{
+    border: solid thin #3270d9;
+    margin: 2px;
+    background-color: #2679cd;
+    color:white;
+}
+.page .pageItem:hover, .page .pageItemActive:hover{
+    border: solid thin #0056bf;
+    background-color: #0056bf;
+    color:white;
+}
+.page .pageItemDisable{
+    border: solid thin #DDDDDD;
+    margin: 2px;
+    background-color: #DDDDDD;
+}
+.page li.pageItemDisable:hover{
+    cursor: default;
+}
+.page li[page-rel='firstpage']{
+    background-image: url("../images/page/home_off.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.page li.pageItem[page-rel='firstpage']:hover{
+    background-image: url("../images/page/home_on.png");
+}
+.page li[page-rel='lastpage']{
+    background-image: url("../images/page/end_off.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.page li.pageItem[page-rel='lastpage']:hover{
+    background-image: url("../images/page/end_on.png");
+}
+.page li[page-rel='prepage']{
+    background-image: url("../images/page/left_off.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.page li.pageItem[page-rel='prepage']:hover{
+    background-image: url("../images/page/left_on.png");
+}
+.page li[page-rel='nextpage']{
+    background-image: url("../images/page/right_off.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.page li.pageItem[page-rel='nextpage']:hover{
+    background-image: url("../images/page/right_on.png");
+}

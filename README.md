@@ -1,5 +1,5 @@
 ## requirejs-demo
-A project build with requirejs + grunt
+A project build with art-template + requirejs + grunt
 
 ## Build Setup
 

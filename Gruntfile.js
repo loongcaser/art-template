@@ -19,6 +19,30 @@ module.exports = function(grunt) {
                 ]
             }
         },
+        //grunt-contrib-watch配置
+        watch: {
+            //dev为定义监测任务的名字
+            dev: {
+                files: ['muti-page-built/*.*'],
+                options: {
+                    livereload: 3030
+                }
+            }
+        },
+        //grunt-contrib-connect配置
+        connect: {
+            dev: {
+                options: {
+                    base: "muti-page-built",
+                    port: 2222,
+                    hostname: '*',
+                    livereload: 3030,
+                    open: {
+                        target: 'http://127.0.0.1:2222'
+                    }
+                }
+            }
+        },
         //压缩js
         requirejs: {
             std: {
@@ -153,5 +177,5 @@ module.exports = function(grunt) {
     grunt.loadTasks("build/tasks");
 
     grunt.registerTask('build', ['requirejs','template','cssmin','htmlmin','clean']);
-    grunt.registerTask('default', ['template']);
+    grunt.registerTask('dev', ['connect:dev', 'watch:dev']);
 };

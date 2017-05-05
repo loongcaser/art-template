@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <title>@% block('title') %@</title>
+    <meta name="keywords" content="爱菩新医" />
+    <meta name="description" content="" />
+    <link rel="shortcut icon" href="favicon.ico"/> @% block('head') %@
+</head>
+<body>
+    <div>
+        @% include('./header.html') %@
+        <div class="content">
+            @% block('content') %@
+        </div>
+        @% include('./footer.html') %@
+    </div>
+    @% block('js') %@
+</body>
+</html>

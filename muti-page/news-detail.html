@@ -1,106 +1,60 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
-    <meta name="renderer" content="webkit" />
-    <meta name="keywords" content="">
-    <meta name="description" content=".">
-    <link rel="shortcut icon" href="favicon.ico"/>
-    <title>爱菩新医-公司新闻</title>
-    <link href="resource/css/main.css" rel="stylesheet" />
-</head>
-<body>
-    <div class="header" id="header">
-        <div class="wrap-sub">
-            <a href="index.html" class="fl"><img src="resource/images/index/logo.png" alt="logo"></a>
-            <ul class="fr">
-                <li><a href="index.html">首页</a></li>
-                <li><a href="production.html">产品</a></li>
-                <li class="active"><a href="news-company.html">新闻</a></li>
-                <li><a href="join.html">招聘</a></li>
-                <li><a href="about.html">关于我们</a></li>
-                <li><a href="contact.html">联系我们</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="content">
-        <div class="news-detail-top-banner">
-        </div>
-        <div class="news-banner">
-            <div class="wrap-sub">
-                <div class="new-detail">
-                    <div class="news-header">
-                        <h2>新闻标题XXX <small>2017-03-13</small></h2>
-                    </div>
-                    <div class="news-body" id="news-body">
-                        <ul>
-                            <li>
-                                <img src="resource/images/news/news-list_1.jpg" alt="news-list">
-                                <div class="pic-desc">图片介绍文字</div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet
-                                    lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient
-                                    montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc
-                                    eget.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet
-                                    lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes,
-                                    nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.Lorem
-                                    ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et
-                                    viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                                    Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
-                            </li>
-                            <li>
-                                <img src="resource/images/news/news-list_1.jpg" alt="news-list">
-                                <div class="pic-desc">图片介绍文字</div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus
-                                    accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes,
-                                    nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.Lorem
-                                    ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
-                                    justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam
-                                    fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar
-                                    tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate,
-                                    felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <div class="page-nav">
-                        <a href="">上一条</a><a href="news-company.html">返回</a><a href="">下一条</a>
-                    </div>
-
-                    <div id="test"></div>
-
-                </div>
+@% extend('./template/layout.html') %@
+<!--title-->
+@% block('title', function(){ %@新闻详情@% }) %@
+<!--head-->
+@% block('head', function(){ %@
+<link rel="stylesheet" type="text/css" href="resource/css/main.css?v=@%=v%@" /> @% }) %@
+<!--content-->
+@% block('content', function(){ %@
+<div class="news-detail-top-banner"></div>
+<div class="news-banner">
+    <div class="wrap-sub">
+        <div class="new-detail">
+            <div class="news-header">
+                <h2>新闻标题XXX <small>2017-03-13</small></h2>
             </div>
-        </div>
-    </div>
-
-    <div class="footer">
-        <div class="wrap">
-            <div class="quick-link fl">
-                <div class="link-title">快捷链接</div>
+            <div class="news-body" id="news-body">
                 <ul>
-                    <li><a href="index.html">首页</a></li>
-                    <li><a href="production.html">产品</a></li>
-                    <li><a href="news-company.html">新闻</a></li>
-                    <li><a href="join.html">招聘</a></li>
-                    <li><a href="about.html">关于我们</a></li>
-                    <li><a href="contact.html">联系我们</a></li>
+                    <li>
+                        <img src="resource/images/news/news-list_1.jpg" alt="news-list">
+                        <div class="pic-desc">图片介绍文字</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet
+                            lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient
+                            montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc
+                            eget.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet
+                            lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes,
+                            nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et
+                            viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+                    </li>
+                    <li>
+                        <img src="resource/images/news/news-list_1.jpg" alt="news-list">
+                        <div class="pic-desc">图片介绍文字</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+                            accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes,
+                            nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                            justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam
+                            fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar
+                            tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate,
+                            felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+                    </li>
                 </ul>
+
             </div>
-            <div class="contact-info fl">
-                <div class="link-title">联系信息</div>
-                <ul>
-                    <li><img src="resource/images/index/phone.png" alt="phone">电话：020-87565003</li>
-                    <li><img src="resource/images/index/email.png" alt="email">邮箱：support@iprexmed.com</li>
-                    <li><img src="resource/images/index/localtion.png" alt="localtion">地址：广东省广州市天河区龙怡路91号广业文化创意园5楼5015</li>
-                </ul>
+            <div class="page-nav">
+                <a href="">上一条</a><a href="news-company.html">返回</a><a href="">下一条</a>
             </div>
-            <p class="copyright">Copyright © 2017 爱菩新医药科技有限公司 | 粤ICP备17009269号</p>
+
+            <div id="test"></div>
+
         </div>
     </div>
-    <span id="gotop" class="gotop"> <img src="resource/images/index/gotop.png"></span>
-    <script data-main="modules/src/index" src="resource/lib/require.js"></script>
-</body>
-</html>
+</div>
+@% }) %@
+<!--js-->
+@% block('js', function(){ %@
+<script data-main="modules/src/index" src="resource/lib/require.js"></script>
+@% }) %@

@@ -211,7 +211,6 @@
 }
 .index-news-banner ul li:hover h3{
     font-size: 20px;
-    font-weight: bold;
 }
 .index-news-banner ul li:hover .new_icon_off{
     display: block;

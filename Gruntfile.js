@@ -1,36 +1,22 @@
-/*
- * 不同livereload端口设置
- * connect livereload端口设置不同的值
- * watch 下的livrereload 与其一一对应
- */
+'use strict';
+
 module.exports = function(grunt) {
 
     require('load-grunt-tasks')(grunt);//自动加载grunt任务
     // require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
     //初始化配置
     grunt.initConfig({
-        //grunt-contrib-watch配置
-        watch: {
-            //dev为定义监测任务的名字
-            dev: {
-                files: ['muti-page/*.*'],
+        template: {
+            compile: {
                 options: {
-                    livereload: 3030
-                }
-            }
-        },
-        //grunt-contrib-connect配置
-        connect: {
-            dev: {
-                options: {
-                    base: "muti-page",
-                    port: 2222,
-                    hostname: '*',
-                    livereload: 3030,
-                    open: {
-                        target: 'http://127.0.0.1:2222'
+                    data: {
+                        active:"active",
+                        v: 1
                     }
-                }
+                },
+                files: [
+                    { src: ['**/*.html', '!template/**/*.html'], dest: 'muti-page-built', expand: true, cwd: 'muti-page-built' }
+                ]
             }
         },
         //压缩js
@@ -100,7 +86,7 @@ module.exports = function(grunt) {
         },
         //处理html中css、js 引入合并问题
         usemin: {
-            html: 'muti-page/*.html'
+            html: 'muti-page-built/*.html'
         },
         //压缩HTML     
         htmlmin:{
@@ -118,7 +104,7 @@ module.exports = function(grunt) {
             html:{
                 files:[{
                     expand: true, 
-                    cwd: 'muti-page/', 
+                    cwd: 'muti-page-built/', 
                     src: ['*.html'], 
                     dest: 'muti-page-built/'
                 }]
@@ -127,12 +113,45 @@ module.exports = function(grunt) {
         //清除log文件
         clean: {
             txt: 'muti-page-built/build.txt'
-        },
+        }
+    });
+
+    grunt.registerMultiTask('template', 'template inheritance and sub template', function() {
+        var path = require('path');
+        var template = require('art-template');
+
+        var options = this.options({
+            //模板根目录
+            root: '/',
+            //默认后缀名
+            extname: '.html',
+            data: {}
+        });
+        template.defaults.root = options.root;
+        template.defaults.extname = options.extname;
+        // 原生语法的界定符规则
+        template.defaults.rules[0].test = /@%(#?)((?:==|=#|[=-])?)([\w\W]*?)(-?)%@/;
+        template.defaults.rules[1].test = /@%(#?)((?:==|=#|[=-])?)([\w\W]*?)(-?)%@/;
+
+        this.files.forEach(function(f) {
+            var fileList = f.src.filter(function(filepath) {
+                if (!grunt.file.exists(filepath)) {
+                    grunt.log.warn('Source file "' + filepath + '" not found.');
+                    return false;
+                } else {
+                    return true;
+                }
+
+            }).map(function(filepath) {
+                var _html = template(path.resolve(__dirname, filepath), options.data);
+                grunt.file.write(f.dest, _html);
+            });
+        });
+
     });
 
     grunt.loadTasks("build/tasks");
-    //注册任务到grunt
-    grunt.registerTask('dev', ['connect:dev', 'watch:dev']);
-    grunt.registerTask('default', ['dev']);
-    grunt.registerTask('build', ['requirejs','cssmin','htmlmin','clean']);
+
+    grunt.registerTask('build', ['requirejs','template','cssmin','htmlmin','clean']);
+    grunt.registerTask('default', ['template']);
 };

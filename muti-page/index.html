@@ -1,213 +1,168 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
-    <meta name="renderer" content="webkit" />
-    <meta name="keywords" content="">
-    <meta name="description" content=".">
-    <link rel="shortcut icon" href="favicon.ico"/>
-    <title>爱菩新医-首页</title>
-    <link href="resource/css/index.css" rel="stylesheet" />
-</head>
-<body>
-    <div class="header" id="header">
-        <div class="wrap-sub">
-            <img src="resource/images/index/logo.png" alt="logo" class="fl">
-            <ul class="fr">
-                <li class="active"><a href="index.html">首页</a></li>
-                <li><a href="production.html">产品</a></li>
-                <li><a href="news-company.html">新闻</a></li>
-                <li><a href="join.html">招聘</a></li>
-                <li><a href="about.html">关于我们</a></li>
-                <li><a href="contact.html">联系我们</a></li>
-            </ul>
+@% extend('./template/layout.html') %@
+<!--title-->
+@% block('title', function(){ %@首页@% }) %@
+<!--head-->
+@% block('head', function(){ %@
+<link rel="stylesheet" type="text/css" href="resource/css/index.css?v=@%=v%@" /> @% }) %@
+<!--content-->
+@% block('content', function(){ %@
+<div class="top-banner">
+    <div class="wrap">
+        <p>
+            爱菩新医药作为高新科技医药企业，持有系列专利及软件著作权等知识产权，提供药物分子设计、精准医学大数据服务以及研发、生产生物药与现代中药。
+        </p>
+        <a href="about.html" class="btn btn-primary">了解我们</a>
+    </div>
+</div>
+<div class="product-banner">
+    <div class="wrap">
+        <div class="introduction fr">
+            <img src="resource/images/index/production_bg.jpg" alt="production">
+            <h2>
+                英夫化学信息管理系统 <i>InfoBase</i>
+            </h2>
+            <div class="introduction-text">
+                <p>
+                    专业的化学信息数据管家，为您提供便捷、安全的化学信息数据管理与分析服务
+                </p>
+                <p>
+                    InfoBase提供化合物综合信息（基本信息、计算化学信息，生物活性信息、样品出入库信息等）的规范管理，支持图片，文件的上传与下载。
+                </p>
+            </div>
+            <a href="production-detail.html" class="btn btn-primary">产品详情</a>
         </div>
     </div>
-
-    <div class="content">
-        <div class="top-banner">
-            <div class="wrap">
-                <p>
-                    爱菩新医药作为高新科技医药企业，持有系列专利及软件著作权等知识产权，提供药物分子设计、精准医学大数据服务以及研发、生产生物药与现代中药。
-                </p>
-                <a href="about.html" class="btn btn-primary">了解我们</a>
-            </div>
-        </div>
-        <div class="product-banner">
-            <div class="wrap">
-                <div class="introduction fr">
-                    <img src="resource/images/index/production_bg.jpg" alt="production">
-                    <h2>
-                        英夫化学信息管理系统 <i>InfoBase</i>
-                    </h2>
-                    <div class="introduction-text">
-                        <p>
-                            专业的化学信息数据管家，为您提供便捷、安全的化学信息数据管理与分析服务
-                        </p>
-                        <p>
-                            InfoBase提供化合物综合信息（基本信息、计算化学信息，生物活性信息、样品出入库信息等）的规范管理，支持图片，文件的上传与下载。
-                        </p>
-                    </div>
-                    <a href="production-detail.html" class="btn btn-primary">产品详情</a>
+</div>
+<div class="help-banner">
+    <div class="wrap">
+        <h2>我们能帮您做什么</h2>
+        <ul>
+            <li>
+                <img src="resource/images/index/help_1_on.jpg" alt="" class="on">
+                <img src="resource/images/index/help_1_off.jpg" alt="" class="off">
+                <span>软件开发</span>
+            </li>
+            <li>
+                <img src="resource/images/index/help_2_on.jpg" alt="" class="on">
+                <img src="resource/images/index/help_2_off.jpg" alt="" class="off">
+                <span>产品定制</span>
+            </li>
+            <li>
+                <img src="resource/images/index/help_3_on.jpg" alt="" class="on">
+                <img src="resource/images/index/help_3_off.jpg" alt="" class="off">
+                <span>数据信息的检索和分析</span>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="feature-banner">
+    <div class="wrap">
+        <h2>产品特色</h2>
+        <ul>
+            <li>
+                <img src="resource/images/index/feature_1.jpg" alt="feature">
+                <span>界面友好</span>
+            </li>
+            <li>
+                <img src="resource/images/index/feature_2.jpg" alt="feature">
+                <span>数据安全</span>
+            </li>
+            <li>
+                <img src="resource/images/index/feature_3.jpg" alt="feature">
+                <span>操作简单</span>
+            </li>
+            <li>
+                <img src="resource/images/index/feature_4.jpg" alt="feature">
+                <span>精准检索</span>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="strategy-banner">
+    <div class="wrap text-center">
+        <h2>我们的战略定位</h2>
+        <p>
+            在医药领域提供专业、精准的研发服务，为提升药物研发水平，为中药现代化，为人类的健康事业作出卓越的贡献。
+        </p>
+        <a href="join.html" class="btn btn-primary">加入我们</a>
+    </div>
+</div>
+<div class="company-banner">
+    <div class="wrap">
+        <h2>合作单位</h2>
+        <ul>
+            <li>
+                <img src="resource/images/index/company_1.jpg" alt="company">
+                <span>中山大学</span>
+            </li>
+            <li>
+                <img src="resource/images/index/company_2.jpg" alt="company">
+                <span>昆明植物研究所</span>
+            </li>
+            <li>
+                <img src="resource/images/index/company_3.jpg" alt="company">
+                <span>云南中医学院</span>
+            </li>
+            <li>
+                <img src="resource/images/index/company_4.jpg" alt="company">
+                <span>广州中医药大学</span>
+            </li>
+            <li>
+                <img src="resource/images/index/company_5.jpg" alt="company">
+                <span>浙江大学</span>
+            </li>
+            <li>
+                <img src="resource/images/index/company_6.jpg" alt="company">
+                <span>英国Cresset</span>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="index-news-banner">
+    <div class="wrap">
+        <h2>最新动态 <small>可以通过这里了解我们的最新产品，发布会及合作事务等商业活动资讯</small></h2>
+        <ul>
+            <li>
+                <a href="news-detail.html">
+                    <img src="resource/images/index/new_1_on.jpg" alt="company" class="new_icon_on">
+                    <img src="resource/images/index/new_1_off.jpg" alt="company" class="new_icon_off">
+                </a>
+                <div class="desc">
+                    <h3>Cresset高层莅临爱菩新公司</h3>
+                    <p>2017-03-13</p>
                 </div>
-            </div>
-        </div>
-        <div class="help-banner">
-            <div class="wrap">
-                <h2>我们能帮您做什么</h2>
-                <ul>
-                    <li>
-                        <img src="resource/images/index/help_1_on.jpg" alt="" class="on">
-                        <img src="resource/images/index/help_1_off.jpg" alt="" class="off">
-                        <span>软件开发</span>
-                    </li>
-                    <li>
-                        <img src="resource/images/index/help_2_on.jpg" alt="" class="on">
-                        <img src="resource/images/index/help_2_off.jpg" alt="" class="off">
-                        <span>产品定制</span>
-                    </li>
-                    <li>
-                        <img src="resource/images/index/help_3_on.jpg" alt="" class="on">
-                        <img src="resource/images/index/help_3_off.jpg" alt="" class="off">
-                        <span>数据信息的检索和分析</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="feature-banner">
-            <div class="wrap">
-                <h2>产品特色</h2>
-                <ul>
-                    <li>
-                        <img src="resource/images/index/feature_1.jpg" alt="feature">
-                        <span>界面友好</span>
-                    </li>
-                    <li>
-                        <img src="resource/images/index/feature_2.jpg" alt="feature">
-                        <span>数据安全</span>
-                    </li>
-                    <li>
-                        <img src="resource/images/index/feature_3.jpg" alt="feature">
-                        <span>操作简单</span>
-                    </li>
-                    <li>
-                        <img src="resource/images/index/feature_4.jpg" alt="feature">
-                        <span>精准检索</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="strategy-banner">
-            <div class="wrap text-center">
-                <h2>我们的战略定位</h2>
-                <p>
-                    在医药领域提供专业、精准的研发服务，为提升药物研发水平，为中药现代化，为人类的健康事业作出卓越的贡献。
-                </p>
-                <a href="join.html" class="btn btn-primary">加入我们</a>
-            </div>
-        </div>
-        <div class="company-banner">
-            <div class="wrap">
-                <h2>合作单位</h2>
-                <ul>
-                    <li>
-                        <img src="resource/images/index/company_1.jpg" alt="company">
-                        <span>中山大学</span>
-                    </li>
-                    <li>
-                        <img src="resource/images/index/company_2.jpg" alt="company">
-                        <span>昆明植物研究所</span>
-                    </li>
-                    <li>
-                        <img src="resource/images/index/company_3.jpg" alt="company">
-                        <span>云南中医学院</span>
-                    </li>
-                    <li>
-                        <img src="resource/images/index/company_4.jpg" alt="company">
-                        <span>广州中医药大学</span>
-                    </li>
-                    <li>
-                        <img src="resource/images/index/company_5.jpg" alt="company">
-                        <span>浙江大学</span>
-                    </li>
-                    <li>
-                        <img src="resource/images/index/company_6.jpg" alt="company">
-                        <span>英国Cresset</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="index-news-banner">
-            <div class="wrap">
-                <h2>最新动态 <small>可以通过这里了解我们的最新产品，发布会及合作事务等商业活动资讯</small></h2>
-                <ul>
-                    <li>
-                        <a href="news-detail.html">
-                            <img src="resource/images/index/new_1_on.jpg" alt="company" class="new_icon_on">
-                            <img src="resource/images/index/new_1_off.jpg" alt="company" class="new_icon_off">
-                        </a>
-                        <div class="desc">
-                            <h3>Cresset高层莅临爱菩新公司</h3>
-                            <p>2017-03-13</p>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="news-detail.html">
-                            <img src="resource/images/index/new_1_on.jpg" alt="company" class="new_icon_on">
-                            <img src="resource/images/index/new_1_off.jpg" alt="company" class="new_icon_off">
-                        </a>
-                        <div class="desc">
-                            <h3>Cresset高层莅临爱菩新公司</h3>
-                            <p>2017-03-13</p>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="news-detail.html">
-                            <img src="resource/images/index/new_1_on.jpg" alt="company" class="new_icon_on">
-                            <img src="resource/images/index/new_1_off.jpg" alt="company" class="new_icon_off">
-                        </a>
-                        <div class="desc">
-                            <h3>Cresset高层莅临爱菩新公司</h3>
-                            <p>2017-03-13</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="desire-banner">
-            <div class="wrap-sub">
-                <span>我们的企业愿景：成为国际上精准医学信息服务行业的领导者</span>
-                <a href="join.html" class="btn btn-default fr">加入我们</a>
-            </div>
-        </div>
+            </li>
+            <li>
+                <a href="news-detail.html">
+                    <img src="resource/images/index/new_1_on.jpg" alt="company" class="new_icon_on">
+                    <img src="resource/images/index/new_1_off.jpg" alt="company" class="new_icon_off">
+                </a>
+                <div class="desc">
+                    <h3>Cresset高层莅临爱菩新公司</h3>
+                    <p>2017-03-13</p>
+                </div>
+            </li>
+            <li>
+                <a href="news-detail.html">
+                    <img src="resource/images/index/new_1_on.jpg" alt="company" class="new_icon_on">
+                    <img src="resource/images/index/new_1_off.jpg" alt="company" class="new_icon_off">
+                </a>
+                <div class="desc">
+                    <h3>Cresset高层莅临爱菩新公司</h3>
+                    <p>2017-03-13</p>
+                </div>
+            </li>
+        </ul>
     </div>
-
-    <div class="footer">
-        <div class="wrap">
-            <div class="quick-link fl">
-                <div class="link-title">快捷链接</div>
-                <ul>
-                    <li><a href="index.html">首页</a></li>
-                    <li><a href="production.html">产品</a></li>
-                    <li><a href="news-company.html">新闻</a></li>
-                    <li><a href="join.html">招聘</a></li>
-                    <li><a href="about.html">关于我们</a></li>
-                    <li><a href="contact.html">联系我们</a></li>
-                </ul>
-            </div>
-            <div class="contact-info fl">
-                <div class="link-title">联系信息</div>
-                <ul>
-                    <li><img src="resource/images/index/phone.png" alt="phone">电话：020-87565003</li>
-                    <li><img src="resource/images/index/email.png" alt="email">邮箱：support@iprexmed.com</li>
-                    <li><img src="resource/images/index/localtion.png" alt="localtion">地址：广东省广州市天河区龙怡路91号广业文化创意园5楼5015</li>
-                </ul>
-            </div>
-            <p class="copyright">Copyright © 2017 爱菩新医药科技有限公司 | 粤ICP备17009269号</p>
-        </div>
+</div>
+<div class="desire-banner">
+    <div class="wrap-sub">
+        <span>我们的企业愿景：成为国际上精准医学信息服务行业的领导者</span>
+        <a href="join.html" class="btn btn-default fr">加入我们</a>
     </div>
-    <span id="gotop" class="gotop"> <img src="resource/images/index/gotop.png"></span>
-    <script data-main="modules/src/index" src="resource/lib/require.js"></script>
-</body>
-</html>
+</div>
+@% }) %@
+<!--js-->
+@% block('js', function(){ %@
+<script data-main="modules/src/index" src="resource/lib/require.js"></script>
+@% }) %@

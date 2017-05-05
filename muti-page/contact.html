@@ -1,80 +1,34 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
-    <meta name="renderer" content="webkit" />
-    <meta name="keywords" content="">
-    <meta name="description" content=".">
-    <link rel="shortcut icon" href="favicon.ico"/>
-    <title>爱菩新医-联系我们</title>
-    <link href="resource/css/main.css" rel="stylesheet" />
-</head>
-<body>
-    <div class="header" id="header">
-        <div class="wrap-sub">
-            <a href="index.html" class="fl"><img src="resource/images/index/logo.png" alt="logo"></a>
-            <ul class="fr">
-                <li><a href="index.html">首页</a></li>
-                <li><a href="production.html">产品</a></li>
-                <li><a href="news-company.html">新闻</a></li>
-                <li><a href="join.html">招聘</a></li>
-                <li><a href="about.html">关于我们</a></li>
-                <li class="active"><a href="contact.html">联系我们</a></li>
-            </ul>
+@% extend('./template/layout.html') %@
+<!--title-->
+@% block('title', function(){ %@联系我们@% }) %@
+<!--head-->
+@% block('head', function(){ %@
+<link rel="stylesheet" type="text/css" href="resource/css/main.css?v=@%=v%@" /> @% }) %@
+<!--content-->
+@% block('content', function(){ %@
+<div class="contact-top-banner"></div>
+<div class="contact-info-banner">
+    <div class="wrap-sub">
+        <div class="contact-info-item">
+            <h2>联系方式：</h2>
+            <p>电话： 020-87565003</p>
+            <p>传真： 020-87565003</p>
+            <p>邮箱： support@iprexmed.com</p>
+            <p>Q  Q： XXXXXXXX</p>
+        </div>
+        <div class="contact-info-item">
+            <h2>地址：</h2>
+            <p>广东省广州市天河区龙怡路91号广业文化创意园5楼5015</p>
         </div>
     </div>
-
-    <div class="content">
-        <div class="contact-top-banner">
-        </div>
-        <div class="contact-info-banner">
-            <div class="wrap-sub">
-                <div class="contact-info-item">
-                    <h2>联系方式：</h2>
-                    <p>电话： 020-87565003</p>
-                    <p>传真： 020-87565003</p>
-                    <p>邮箱： support@iprexmed.com</p>
-                    <p>Q  Q： XXXXXXXX</p>
-                </div>
-                <div class="contact-info-item">
-                    <h2>地址：</h2>
-                    <p>广东省广州市天河区龙怡路91号广业文化创意园5楼5015</p>
-                </div>
-            </div>
-            <div class="wrap">
-                <!--百度地图容器-->
-                <div style="width:1180px;height:550px;margin-top:30px;border:#ccc solid 1px;" id="dituContent"></div><!--百度地图容器-->
-            </div>
-        </div>
+    <div class="wrap">
+        <!--百度地图容器-->
+        <div style="width:1180px;height:550px;margin-top:30px;border:#ccc solid 1px;" id="dituContent"></div><!--百度地图容器-->
     </div>
-
-    <div class="footer">
-        <div class="wrap">
-            <div class="quick-link fl">
-                <div class="link-title">快捷链接</div>
-                <ul>
-                    <li><a href="index.html">首页</a></li>
-                    <li><a href="production.html">产品</a></li>
-                    <li><a href="news-company.html">新闻</a></li>
-                    <li><a href="join.html">招聘</a></li>
-                    <li><a href="about.html">关于我们</a></li>
-                    <li><a href="contact.html">联系我们</a></li>
-                </ul>
-            </div>
-            <div class="contact-info fl">
-                <div class="link-title">联系信息</div>
-                <ul>
-                    <li><img src="resource/images/index/phone.png" alt="phone">电话：020-87565003</li>
-                    <li><img src="resource/images/index/email.png" alt="email">邮箱：support@iprexmed.com</li>
-                    <li><img src="resource/images/index/localtion.png" alt="localtion">地址：广东省广州市天河区龙怡路91号广业文化创意园5楼5015</li>
-                </ul>
-            </div>
-            <p class="copyright">Copyright © 2017 爱菩新医药科技有限公司 | 粤ICP备17009269号</p>
-        </div>
-    </div>
-    <span id="gotop" class="gotop"> <img src="resource/images/index/gotop.png"></span>
-    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
-    <script data-main="modules/src/map" src="resource/lib/require.js"></script>
-</body>
-</html>
+</div>
+@% }) %@
+<!--js-->
+@% block('js', function(){ %@
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+<script data-main="modules/src/map" src="resource/lib/require.js"></script>
+@% }) %@
